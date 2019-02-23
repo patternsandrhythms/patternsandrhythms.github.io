@@ -1,0 +1,140 @@
+     canvas {
+       margin: -60px auto;
+     }
+
+     h1,
+     h2,
+     h3 {
+       font-family: 'Baloo Bhaijaan', cursive;
+     }
+
+     h4,
+     p {
+       font-family: 'Sniglet', cursive;
+     }
+
+     body {
+       background-image: linear-gradient(to top right, black, rgba(0, 0, 0, 0.9));
+       background-size: 100%;
+       display: flex;
+       flex-flow: column;
+       justify-content: center;
+       width: 100vw;
+       height: 100vh;
+       overflow: hidden;
+       margin: 0px;
+     }
+
+     header {
+       height: 100px;
+       width: 100vw;
+       position: absolute;
+       display: flex;
+       justify-content: space-evenly;
+       flex-flow: row;
+       top: 0px;
+       background-color: wheat;
+       border-bottom: 3px solid indianred;
+     }
+
+     footer {
+       height: 100px;
+       bottom: 0px;
+       display: flex;
+       flex-flow: row;
+       justify-content: space-evenly;
+       width: 100vw;
+       position: absolute;
+       background-color: lightblue;
+       border-top: 3px solid cadetblue;
+     }
+
+     .spring1 {
+       position: relative;
+       z-index: 1;
+       transform: scale(1.4)translatey(-9vh)translatex(0vh);
+     }
+
+     .spring2 {
+       position: relative;
+       z-index: 2;
+       transform: scale(1.30)translatey(-5vh)translatex(2vh);
+     }
+
+     .spring3 {
+       position: relative;
+       z-index: 3;
+       transform: scale(1.2)translatey(0vh)translatex(5vh);
+     }
+
+     .spring4 {
+       position: relative;
+       z-index: 4;
+       transform: scale(1)translatey(5vh)translatex(10vh);
+     }
+
+     .spring img {
+       max-width: 50vh;
+       width: 75%;
+       right: 0px;
+       position: absolute;
+       transform: scale(1)translatex(0);
+       opacity: 0.9;
+       filter: hue-rotate(0deg)invert(0.1);
+       transition: filter 500ms, transform 500ms, z-index 500ms ease-in;
+     }
+
+     .spring img:hover {
+       opacity: 1;
+       filter: hue-rotate(-10deg)invert(0);
+       transform: scale(1.2)translatex(-5vw);
+     }
+
+     .spring {
+       transition: z-index 500ms ease;
+     }
+     .slider .spring{       height:5vh;
+       transition:height 1s ease;
+}
+.slider:hover .spring{       height:10vh;
+}
+
+     .spring:hover {
+       z-index: 5;
+     }
+
+     a {
+       text-decoration: none;
+       color: white;
+       opacity: 0.8;
+       transition: letter-spacing 500ms, opacity 500ms, text-shadow 500ms ease;
+       text-shadow: 0px 0px 5px rgba(255, 255, 255, 0);
+     }
+
+     a:hover {
+       letter-spacing: 2px;
+       opacity: 1;
+       text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+     }
+
+     .slider {
+       height: inherit;
+       width: 50vw;
+       top: 0px;
+       display: flex;
+       flex-flow: column;
+       justify-content: center;
+       position: absolute;
+       right: 0px;
+     }
+
+     article {
+       height: inherit;
+       margin-top: 100px;
+       margin-bottom: 100px;
+       display: flex;
+       flex-flow: column;
+       justify-content: center;
+       position: static;
+       width: 100vw;
+     }
